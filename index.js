@@ -107,7 +107,6 @@ mcjsRouting.loadRoutes(app,{ verbose: !module.parent });
 
 app.use(function(req, res) {
     res.status(404).render('404',{ selectedTheme: config.theme});
-    res.status(500).render('404',{ selectedTheme: config.theme});
 });
 
 app.get("/", function(req, res, next) {
